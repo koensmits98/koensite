@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Koen Smits — Personal Site</title>
+    <meta name="description" content="Personal website of Koen Smits: projects, interests, and contact." />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:title" content="Koen Smits — Personal Site" />
+    <meta property="og:description" content="Projects, interests, and contact." />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="#top">KS</a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="btn">Contact</a></li>
+          </ul>
+        </nav>
+        <section class="hero">
+          <img class="avatar" src="img/avatar.jpg" alt="Portrait of Koen" />
+          <div class="hero-copy">
+            <h1>Hi, I’m Koen.</h1>
+            <p>
+              M2 nuclear engineering student with a physics/engineering background.
+              I enjoy tackling complex energy topics and explaining them clearly.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#projects">See my projects</a>
+              <a class="link" href="Koen_Smits_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I’m studying nuclear energy and the role it can play in the energy transition.
+          I like working in multidisciplinary teams and making technical ideas accessible.
+        </p>
+        <ul class="facts">
+          <li>Based in Europe (NL/FR/CA experience)</li>
+          <li>Physics & Engineering background</li>
+          <li>Interested in SMRs, neutronics, and public communication</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Neutronic Simulations @ CEA</h3>
+            <p>Modeled a reactor core; learned MOC/CPM basics and industry workflow.</p>
+            <a class="card-link" href="#" target="_blank" rel="noreferrer">Read more</a>
+          </article>
+
+          <article class="card">
+            <h3>H→ZZ→4ℓ Analysis (Nikhef)</h3>
+            <p>Bachelor project with ATLAS data to study Higgs decay channels.</p>
+            <a class="card-link" href="#" target="_blank" rel="noreferrer">Project notes</a>
+          </article>
+
+          <article class="card">
+            <h3>Energy explainer site</h3>
+            <p>Public-facing articles on nuclear’s role in the transition.</p>
+            <a class="card-link" href="#" target="_blank" rel="noreferrer">Visit</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Best way to reach me:</p>
+        <ul class="links">
+          <li><a href="mailto:koen@example.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/koensmits" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/koensmits" target="_blank" rel="noreferrer">GitHub</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Koen Smits</p>
+      </div>
+    </footer>
+
+    <script>
+      // set current year automatically
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
